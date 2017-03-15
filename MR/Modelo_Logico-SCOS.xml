@@ -416,7 +416,7 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="quil*" id="26">
+        <Campo nome="kmAtual*" id="26">
           <Left Valor="460"/>
           <Top Valor="410"/>
           <Width Valor="205"/>
@@ -2174,7 +2174,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="76">
               <Left Valor="212"/>
-              <Top Valor="125"/>
+              <Top Valor="81"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2200,7 +2200,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="77">
               <Left Valor="411"/>
-              <Top Valor="91"/>
+              <Top Valor="94"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2267,7 +2267,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="81">
               <Left Valor="662"/>
-              <Top Valor="91"/>
+              <Top Valor="94"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2308,7 +2308,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="84">
               <Left Valor="555"/>
-              <Top Valor="172"/>
+              <Top Valor="178"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2508,8 +2508,8 @@
           <MostraCardinalidade Valor="-1" Card_id="202"/>
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="202">
-              <Left Valor="110"/>
-              <Top Valor="272"/>
+              <Left Valor="212"/>
+              <Top Valor="168"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
