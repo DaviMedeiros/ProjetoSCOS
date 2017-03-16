@@ -27,7 +27,7 @@
     </Template>
 	</Informacoes>
 	<Tabelas>
-    <Tabela nome="Cliente" id="1">
+    <Tabela nome="cliente" id="1">
       <Left Valor="9"/>
       <Top Valor="9"/>
       <Width Valor="203"/>
@@ -231,7 +231,7 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="Email" id="20">
+        <Campo nome="email" id="20">
           <Left Valor="9"/>
           <Top Valor="190"/>
           <Width Valor="201"/>
@@ -252,7 +252,7 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="Observaçoes" id="22">
+        <Campo nome="observacoes" id="22">
           <Left Valor="9"/>
           <Top Valor="208"/>
           <Width Valor="201"/>
@@ -317,7 +317,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="O.S" id="2">
+    <Tabela nome="o.s" id="2">
       <Left Valor="460"/>
       <Top Valor="319"/>
       <Width Valor="207"/>
@@ -628,7 +628,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Mecanico_Serviço" id="3">
+    <Tabela nome="mecanico_serviço" id="3">
       <Left Valor="733"/>
       <Top Valor="319"/>
       <Width Valor="131"/>
@@ -750,7 +750,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Serviço" id="5">
+    <Tabela nome="serviço" id="5">
       <Left Valor="701"/>
       <Top Valor="494"/>
       <Width Valor="135"/>
@@ -851,7 +851,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Produto" id="6">
+    <Tabela nome="produto" id="6">
       <Left Valor="9"/>
       <Top Valor="405"/>
       <Width Valor="173"/>
@@ -952,7 +952,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Veiculo" id="7">
+    <Tabela nome="veiculo" id="7">
       <Left Valor="739"/>
       <Top Valor="39"/>
       <Width Valor="170"/>
@@ -1137,9 +1137,9 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Cliente_Veiculo" id="8">
+    <Tabela nome="cliente_veiculo" id="8">
       <Left Valor="449"/>
-      <Top Valor="41"/>
+      <Top Valor="42"/>
       <Width Valor="213"/>
       <Height Valor="136"/>
       <Fonte default="-1"/>
@@ -1154,7 +1154,7 @@
       <Campos>
         <Campo nome="cod_cliente-veiculo" id="60">
           <Left Valor="449"/>
-          <Top Valor="60"/>
+          <Top Valor="61"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1175,7 +1175,7 @@
         </Campo>
         <Campo nome="cod_cliente" id="74">
           <Left Valor="449"/>
-          <Top Valor="78"/>
+          <Top Valor="79"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1196,7 +1196,7 @@
         </Campo>
         <Campo nome="cod_veiculo" id="78">
           <Left Valor="449"/>
-          <Top Valor="96"/>
+          <Top Valor="97"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1217,7 +1217,7 @@
         </Campo>
         <Campo nome="dataCad*" id="59">
           <Left Valor="449"/>
-          <Top Valor="114"/>
+          <Top Valor="115"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1238,7 +1238,7 @@
         </Campo>
         <Campo nome="dataFech" id="182">
           <Left Valor="449"/>
-          <Top Valor="132"/>
+          <Top Valor="133"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1259,7 +1259,7 @@
         </Campo>
         <Campo nome="status" id="183">
           <Left Valor="449"/>
-          <Top Valor="150"/>
+          <Top Valor="151"/>
           <Width Valor="211"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
@@ -1280,7 +1280,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Produto_os" id="9">
+    <Tabela nome="produto_os" id="9">
       <Left Valor="252"/>
       <Top Valor="452"/>
       <Width Valor="149"/>
@@ -1423,7 +1423,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Endereco" id="194">
+    <Tabela nome="endereco" id="194">
       <Left Valor="275"/>
       <Top Valor="162"/>
       <Width Valor="135"/>
@@ -1566,7 +1566,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Mecanico" id="4">
+    <Tabela nome="mecanico" id="4">
       <Left Valor="924"/>
       <Top Valor="328"/>
       <Width Valor="191"/>
@@ -1770,7 +1770,7 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="perc_comiss*" id="40">
+        <Campo nome="perc-comiss*" id="40">
           <Left Valor="924"/>
           <Top Valor="509"/>
           <Width Valor="189"/>
@@ -1856,7 +1856,7 @@
         </Campo>
       </Campos>
     </Tabela>
-    <Tabela nome="Usuario" id="304">
+    <Tabela nome="usuario" id="304">
       <Left Valor="924"/>
       <Top Valor="1"/>
       <Width Valor="187"/>
@@ -2255,7 +2255,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="65">
               <Left Valor="695"/>
-              <Top Valor="359"/>
+              <Top Valor="363"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2322,7 +2322,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="73">
               <Left Valor="798"/>
-              <Top Valor="431"/>
+              <Top Valor="438"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2389,7 +2389,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="77">
               <Left Valor="411"/>
-              <Top Valor="94"/>
+              <Top Valor="95"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2456,7 +2456,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="81">
               <Left Valor="662"/>
-              <Top Valor="94"/>
+              <Top Valor="95"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2497,7 +2497,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="84">
               <Left Valor="555"/>
-              <Top Valor="178"/>
+              <Top Valor="179"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2791,7 +2791,7 @@
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="69">
               <Left Valor="864"/>
-              <Top Valor="359"/>
+              <Top Valor="363"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
