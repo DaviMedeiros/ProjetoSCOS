@@ -629,9 +629,9 @@
       </Campos>
     </Tabela>
     <Tabela nome="mecanico_serviço" id="3">
-      <Left Valor="733"/>
-      <Top Valor="319"/>
-      <Width Valor="131"/>
+      <Left Valor="707"/>
+      <Top Valor="312"/>
+      <Width Valor="196"/>
       <Height Valor="118"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
@@ -644,9 +644,9 @@
       <cOrdem Valor="0"/>
       <Campos>
         <Campo nome="cod_mecanico-serviço" id="29">
-          <Left Valor="733"/>
-          <Top Valor="338"/>
-          <Width Valor="129"/>
+          <Left Valor="707"/>
+          <Top Valor="331"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -665,9 +665,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="cod_os" id="62">
-          <Left Valor="733"/>
-          <Top Valor="356"/>
-          <Width Valor="129"/>
+          <Left Valor="707"/>
+          <Top Valor="349"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -686,9 +686,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="cod_mecanico" id="66">
-          <Left Valor="733"/>
-          <Top Valor="374"/>
-          <Width Valor="129"/>
+          <Left Valor="707"/>
+          <Top Valor="367"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -707,9 +707,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="cod_servico" id="70">
-          <Left Valor="733"/>
-          <Top Valor="392"/>
-          <Width Valor="129"/>
+          <Left Valor="707"/>
+          <Top Valor="385"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -728,9 +728,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="valorServ*" id="534">
-          <Left Valor="733"/>
-          <Top Valor="410"/>
-          <Width Valor="129"/>
+          <Left Valor="707"/>
+          <Top Valor="403"/>
+          <Width Valor="194"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -753,7 +753,7 @@
     <Tabela nome="serviço" id="5">
       <Left Valor="701"/>
       <Top Valor="494"/>
-      <Width Valor="135"/>
+      <Width Valor="177"/>
       <Height Valor="100"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
@@ -768,7 +768,7 @@
         <Campo nome="cod_servico" id="41">
           <Left Valor="701"/>
           <Top Valor="513"/>
-          <Width Valor="133"/>
+          <Width Valor="175"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -786,10 +786,10 @@
           <OnUpdate Valor="0"/>
           <OnDelete Valor="0"/>
         </Campo>
-        <Campo nome="desc*" id="42">
+        <Campo nome="descricao" id="42">
           <Left Valor="701"/>
           <Top Valor="531"/>
-          <Width Valor="133"/>
+          <Width Valor="175"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -810,7 +810,7 @@
         <Campo nome="valor*" id="43">
           <Left Valor="701"/>
           <Top Valor="549"/>
-          <Width Valor="133"/>
+          <Width Valor="175"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -831,7 +831,7 @@
         <Campo nome="dataAlt" id="44">
           <Left Valor="701"/>
           <Top Valor="567"/>
-          <Width Valor="133"/>
+          <Width Valor="175"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1281,10 +1281,10 @@
       </Campos>
     </Tabela>
     <Tabela nome="produto_os" id="9">
-      <Left Valor="252"/>
-      <Top Valor="452"/>
-      <Width Valor="149"/>
-      <Height Valor="137"/>
+      <Left Valor="221"/>
+      <Top Valor="446"/>
+      <Width Valor="190"/>
+      <Height Valor="146"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
       <Nula Valor="0"/>
@@ -1296,9 +1296,9 @@
       <cOrdem Valor="0"/>
       <Campos>
         <Campo nome="cod_produto-os" id="61">
-          <Left Valor="252"/>
-          <Top Valor="471"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="465"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1317,9 +1317,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="cod_produto" id="86">
-          <Left Valor="252"/>
-          <Top Valor="489"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="483"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1338,9 +1338,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="cod_os" id="90">
-          <Left Valor="252"/>
-          <Top Valor="507"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="501"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1359,9 +1359,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="qntProd*" id="531">
-          <Left Valor="252"/>
-          <Top Valor="525"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="519"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1380,9 +1380,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="valorUN*" id="532">
-          <Left Valor="252"/>
-          <Top Valor="543"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="537"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1401,9 +1401,9 @@
           <OnDelete Valor="0"/>
         </Campo>
         <Campo nome="valorTotal*" id="533">
-          <Left Valor="252"/>
-          <Top Valor="561"/>
-          <Width Valor="147"/>
+          <Left Valor="221"/>
+          <Top Valor="555"/>
+          <Width Valor="188"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1425,9 +1425,9 @@
     </Tabela>
     <Tabela nome="endereco" id="194">
       <Left Valor="275"/>
-      <Top Valor="162"/>
-      <Width Valor="135"/>
-      <Height Valor="136"/>
+      <Top Valor="160"/>
+      <Width Valor="172"/>
+      <Height Valor="138"/>
       <Fonte default="-1"/>
       <Dicionario></Dicionario>
       <Nula Valor="0"/>
@@ -1440,8 +1440,8 @@
       <Campos>
         <Campo nome="cod_endereco" id="195">
           <Left Valor="275"/>
-          <Top Valor="181"/>
-          <Width Valor="133"/>
+          <Top Valor="179"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1461,8 +1461,8 @@
         </Campo>
         <Campo nome="endereco" id="204">
           <Left Valor="275"/>
-          <Top Valor="199"/>
-          <Width Valor="133"/>
+          <Top Valor="197"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1482,8 +1482,8 @@
         </Campo>
         <Campo nome="bairro" id="197">
           <Left Valor="275"/>
-          <Top Valor="217"/>
-          <Width Valor="133"/>
+          <Top Valor="215"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1503,8 +1503,8 @@
         </Campo>
         <Campo nome="cep" id="198">
           <Left Valor="275"/>
-          <Top Valor="235"/>
-          <Width Valor="133"/>
+          <Top Valor="233"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1524,8 +1524,8 @@
         </Campo>
         <Campo nome="cidade" id="199">
           <Left Valor="275"/>
-          <Top Valor="253"/>
-          <Width Valor="133"/>
+          <Top Valor="251"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -1545,8 +1545,8 @@
         </Campo>
         <Campo nome="estado" id="200">
           <Left Valor="275"/>
-          <Top Valor="271"/>
-          <Width Valor="133"/>
+          <Top Valor="269"/>
+          <Width Valor="170"/>
           <Height Valor="19"/>
           <Fonte default="-1"/>
           <Dicionario></Dicionario>
@@ -2254,8 +2254,8 @@
           <MostraCardinalidade Valor="-1" Card_id="65"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="65">
-              <Left Valor="695"/>
-              <Top Valor="363"/>
+              <Left Valor="669"/>
+              <Top Valor="356"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2295,7 +2295,7 @@
           <MostraCardinalidade Valor="-1" Card_id="72"/>
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="72">
-              <Left Valor="836"/>
+              <Left Valor="878"/>
               <Top Valor="529"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
@@ -2321,8 +2321,8 @@
           <MostraCardinalidade Valor="-1" Card_id="73"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="73">
-              <Left Valor="798"/>
-              <Top Valor="438"/>
+              <Left Valor="772"/>
+              <Top Valor="431"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2589,8 +2589,8 @@
           <MostraCardinalidade Valor="-1" Card_id="89"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="89">
-              <Left Valor="214"/>
-              <Top Valor="505"/>
+              <Left Valor="183"/>
+              <Top Valor="504"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2656,8 +2656,8 @@
           <MostraCardinalidade Valor="-1" Card_id="93"/>
           <Cardinalidades Cardinalidade="4">
             <Cardinalidade nome="" id="93">
-              <Left Valor="401"/>
-              <Top Valor="505"/>
+              <Left Valor="411"/>
+              <Top Valor="504"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2724,7 +2724,7 @@
           <Cardinalidades Cardinalidade="1">
             <Cardinalidade nome="" id="203">
               <Left Valor="237"/>
-              <Top Valor="215"/>
+              <Top Valor="214"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
@@ -2790,8 +2790,8 @@
           <MostraCardinalidade Valor="-1" Card_id="69"/>
           <Cardinalidades Cardinalidade="3">
             <Cardinalidade nome="" id="69">
-              <Left Valor="864"/>
-              <Top Valor="363"/>
+              <Left Valor="837"/>
+              <Top Valor="431"/>
               <Width Valor="40"/>
               <Height Valor="20"/>
               <Fonte default="-1"/>
