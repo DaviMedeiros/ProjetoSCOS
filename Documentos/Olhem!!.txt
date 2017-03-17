@@ -15,3 +15,7 @@ E ja deixo pra vocês completarem com suas tarefas feitas.
 	Tabela de usuario corrigida no mr e adicionado as imagens ao documento de requisitos.
 
 ------------------------------------------------------------------------------------------------
+17/03/17 - 07:50 - Davi Medeiros
+	Adicionado as telas ao projeto.
+
+------------------------------------------------------------------------------------------------
