@@ -19,3 +19,7 @@ E ja deixo pra vocês completarem com suas tarefas feitas.
 	Adicionado as telas ao projeto.
 
 ------------------------------------------------------------------------------------------------
+22/03/17 - 10:26 - João Manoel
+	Banco de dados alterado e corrigido.
+
+------------------------------------------------------------------------------------------------

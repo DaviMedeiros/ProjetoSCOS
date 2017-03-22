@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Mar-2017 às 14:53
+-- Generation Time: 22-Mar-2017 às 14:25
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -27,34 +27,34 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `cod_cliente` int(4) NOT NULL,
-  `cod_endereco` int(4) NOT NULL,
-  `nome` text NOT NULL,
-  `tel` int(10) NOT NULL,
-  `cel` int(12) NOT NULL,
-  `cpf-cnpj` int(14) NOT NULL,
-  `rg-inscrEst` varchar(20) NOT NULL,
-  `uf-rg` text NOT NULL,
+  `cpcliente` int(4) NOT NULL,
+  `ceendereco` int(4) DEFAULT NULL,
+  `txnome` varchar(200) NOT NULL,
+  `txtel` varchar(50) DEFAULT NULL,
+  `txcel` varchar(50) DEFAULT NULL,
+  `txcpf_cnpj` varchar(50) NOT NULL,
+  `txrg_inscrEst` varchar(20) NOT NULL,
+  `txuf_rg` varchar(3) DEFAULT NULL,
   `tipo` int(1) NOT NULL,
-  `email` text NOT NULL,
-  `observacoes` text NOT NULL,
-  `status` int(1) NOT NULL,
-  `dataCad` date NOT NULL
+  `txemail` varchar(150) DEFAULT NULL,
+  `txobs` varchar(250) DEFAULT NULL,
+  `statuscli` int(1) NOT NULL,
+  `dtcadcliente` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cliente-veiculo`
+-- Estrutura da tabela `cliente_veiculo`
 --
 
-CREATE TABLE `cliente-veiculo` (
-  `cod_cliente-veiculo` int(4) NOT NULL,
-  `cod_cliente` int(4) NOT NULL,
-  `cod_veiculo` int(4) NOT NULL,
-  `dataCad` date NOT NULL,
-  `dataFech` date NOT NULL,
-  `status` int(1) NOT NULL
+CREATE TABLE `cliente_veiculo` (
+  `cpcliente_veiculo` int(4) NOT NULL,
+  `cecliente` int(4) DEFAULT NULL,
+  `ceveiculo` int(4) DEFAULT NULL,
+  `statusclivei` int(1) NOT NULL,
+  `dtfechclivei` date NOT NULL,
+  `dtcadclivei` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -64,12 +64,13 @@ CREATE TABLE `cliente-veiculo` (
 --
 
 CREATE TABLE `endereco` (
-  `cod_endereco` int(4) NOT NULL,
-  `endereco` text NOT NULL,
-  `bairro` text NOT NULL,
-  `cep` int(8) NOT NULL,
-  `cidade` text NOT NULL,
-  `estado` text NOT NULL
+  `cpendereco` int(4) NOT NULL,
+  `txendereco` varchar(70) DEFAULT NULL,
+  `txbairro` varchar(40) DEFAULT NULL,
+  `txcep` varchar(11) DEFAULT NULL,
+  `txcidade` varchar(50) DEFAULT NULL,
+  `txestado` varchar(50) DEFAULT NULL,
+  `dtaltend` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -79,56 +80,55 @@ CREATE TABLE `endereco` (
 --
 
 CREATE TABLE `mecanico` (
-  `cod_mecanico` int(4) NOT NULL,
-  `nome` text NOT NULL,
-  `endereco` text NOT NULL,
-  `bairro` text NOT NULL,
-  `cidade` text NOT NULL,
-  `tel` int(12) NOT NULL,
-  `cpf` int(14) NOT NULL,
-  `rg` varchar(12) NOT NULL,
-  `ctps` int(40) NOT NULL,
-  `perc-comiss` float NOT NULL,
-  `email` text NOT NULL,
-  `dataNasc` date NOT NULL,
-  `dataCad` date NOT NULL
+  `cpmecanico` int(4) NOT NULL,
+  `ceendereco` int(4) NOT NULL DEFAULT '0',
+  `txnome` varchar(200) NOT NULL,
+  `txtel` varchar(50) DEFAULT NULL,
+  `txcpf` varchar(50) NOT NULL,
+  `txrg` varchar(20) NOT NULL,
+  `txctps` varchar(50) NOT NULL,
+  `percencomiss` float NOT NULL,
+  `txemail` varchar(150) DEFAULT NULL,
+  `dtnascmecanico` date NOT NULL,
+  `dtcadmecanico` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `mecanico-servico`
+-- Estrutura da tabela `mecanico_servico`
 --
 
-CREATE TABLE `mecanico-servico` (
-  `cod_mecanico-servico` int(4) NOT NULL,
-  `cod_os` int(4) NOT NULL,
-  `cod_mecanico` int(4) NOT NULL,
-  `cod_servico` int(4) NOT NULL,
-  `valorServ` float NOT NULL
+CREATE TABLE `mecanico_servico` (
+  `cpmecanico_servico` int(4) NOT NULL,
+  `ceos` int(4) DEFAULT NULL,
+  `cemecanico` int(4) DEFAULT NULL,
+  `ceservico` int(4) DEFAULT NULL,
+  `vlrservmec` float NOT NULL,
+  `dtcadmecserv` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `o.s`
+-- Estrutura da tabela `os`
 --
 
-CREATE TABLE `o.s` (
-  `cod_os` int(4) NOT NULL,
-  `cod_cliente` int(4) NOT NULL,
-  `dataAbert` date NOT NULL,
-  `totalOS` float NOT NULL,
-  `totalServ` float NOT NULL,
-  `totalProd` float NOT NULL,
-  `kmAtual` int(6) NOT NULL,
-  `status` int(1) NOT NULL,
-  `dataFech` date NOT NULL,
-  `dataPag` date NOT NULL,
-  `dataCancel` date NOT NULL,
-  `sitFinanc` int(1) NOT NULL,
-  `motCancel` text NOT NULL,
-  `valorPago` float NOT NULL
+CREATE TABLE `os` (
+  `cpos` int(4) NOT NULL,
+  `cecliente` int(4) NOT NULL,
+  `dtabertura` date NOT NULL,
+  `vlrtotalos` float DEFAULT NULL,
+  `vlrtotalserv` float DEFAULT NULL,
+  `vlrtotalprod` float DEFAULT NULL,
+  `kmatual` float NOT NULL,
+  `statusos` int(1) DEFAULT NULL,
+  `dtfechos` date DEFAULT NULL,
+  `dtpago` date DEFAULT NULL,
+  `dtcancel` date DEFAULT NULL,
+  `situfinanc` int(1) DEFAULT NULL,
+  `txmotivcancel` varchar(250) DEFAULT NULL,
+  `vlrpago` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -138,25 +138,26 @@ CREATE TABLE `o.s` (
 --
 
 CREATE TABLE `produto` (
-  `cod_produto` int(4) NOT NULL,
-  `nome` text NOT NULL,
-  `valorVenda` float NOT NULL,
-  `dataAlt` date NOT NULL
+  `cpproduto` int(4) NOT NULL,
+  `txnome` varchar(200) NOT NULL,
+  `vlrvenda` float NOT NULL,
+  `dtaltprod` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `produto-os`
+-- Estrutura da tabela `produto_os`
 --
 
-CREATE TABLE `produto-os` (
-  `cod_produto-os` int(4) NOT NULL,
-  `cod_produto` int(4) NOT NULL,
-  `cod_os` int(4) NOT NULL,
-  `qntProd` int(4) NOT NULL,
-  `valorUN` float NOT NULL,
-  `valorTotal` float NOT NULL
+CREATE TABLE `produto_os` (
+  `cpproduto_os` int(4) NOT NULL,
+  `ceproduto` int(4) DEFAULT NULL,
+  `ceos` int(4) DEFAULT NULL,
+  `qtdproduto` int(4) NOT NULL,
+  `vlrunit` float NOT NULL,
+  `vlrtotalprodos` float NOT NULL,
+  `dtcadprodos` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -166,10 +167,10 @@ CREATE TABLE `produto-os` (
 --
 
 CREATE TABLE `servico` (
-  `cod_servico` int(4) NOT NULL,
-  `descricao` text NOT NULL,
-  `valor` float NOT NULL,
-  `dataAlt` date NOT NULL
+  `cpservico` int(4) NOT NULL,
+  `txdescricao` varchar(250) NOT NULL,
+  `vlrservico` float NOT NULL,
+  `dtaltserv` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -179,22 +180,20 @@ CREATE TABLE `servico` (
 --
 
 CREATE TABLE `usuario` (
-  `cod_usuario` int(4) NOT NULL,
-  `nome` text NOT NULL,
-  `endereco` text NOT NULL,
-  `bairro` text NOT NULL,
-  `cidade` text NOT NULL,
-  `tel` int(10) NOT NULL,
-  `cel` int(12) NOT NULL,
-  `sexo` text NOT NULL,
-  `cpf` int(14) NOT NULL,
-  `rg` varchar(20) NOT NULL,
-  `uf-rg` text NOT NULL,
-  `ctps` int(40) NOT NULL,
-  `email` text NOT NULL,
-  `dataNasc` date NOT NULL,
+  `cpusuario` int(4) NOT NULL,
+  `ceendereco` int(4) DEFAULT '0',
+  `txnome` varchar(200) NOT NULL,
+  `txtel` varchar(50) DEFAULT NULL,
+  `txcel` varchar(50) DEFAULT NULL,
+  `txsexo` varchar(3) DEFAULT NULL,
+  `txcpf` varchar(14) NOT NULL,
+  `txrg` varchar(20) NOT NULL,
+  `txuf_rg` varchar(3) DEFAULT NULL,
+  `txctps` varchar(50) DEFAULT NULL,
+  `txemail` varchar(150) DEFAULT NULL,
+  `dtnascimento` date NOT NULL,
   `tipo` int(4) NOT NULL,
-  `dataCad` date NOT NULL
+  `dtcadusuario` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -204,14 +203,14 @@ CREATE TABLE `usuario` (
 --
 
 CREATE TABLE `veiculo` (
-  `cod_veiculo` int(4) NOT NULL,
-  `modelo` text NOT NULL,
-  `placa` varchar(20) NOT NULL,
-  `ano` int(4) NOT NULL,
-  `chassis` int(30) NOT NULL,
-  `marca` text NOT NULL,
-  `cor` text NOT NULL,
-  `dataCad` date NOT NULL
+  `cpveiculo` int(4) NOT NULL,
+  `txmodelo` varchar(40) NOT NULL,
+  `txplaca` varchar(20) NOT NULL,
+  `ano` int(4) DEFAULT NULL,
+  `txchassis` varchar(50) DEFAULT NULL,
+  `txmarca` varchar(20) NOT NULL,
+  `txcor` varchar(20) DEFAULT NULL,
+  `dtcadveiculo` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -222,76 +221,78 @@ CREATE TABLE `veiculo` (
 -- Indexes for table `cliente`
 --
 ALTER TABLE `cliente`
-  ADD PRIMARY KEY (`cod_cliente`),
-  ADD KEY `cod_endereco` (`cod_endereco`);
+  ADD PRIMARY KEY (`cpcliente`),
+  ADD KEY `ceendereco` (`ceendereco`);
 
 --
--- Indexes for table `cliente-veiculo`
+-- Indexes for table `cliente_veiculo`
 --
-ALTER TABLE `cliente-veiculo`
-  ADD PRIMARY KEY (`cod_cliente-veiculo`),
-  ADD KEY `cod_cliente` (`cod_cliente`),
-  ADD KEY `cod_veiculo` (`cod_veiculo`);
+ALTER TABLE `cliente_veiculo`
+  ADD PRIMARY KEY (`cpcliente_veiculo`),
+  ADD KEY `cliente-veiculoFK1` (`cecliente`),
+  ADD KEY `cliente-veiculoFK2` (`ceveiculo`);
 
 --
 -- Indexes for table `endereco`
 --
 ALTER TABLE `endereco`
-  ADD PRIMARY KEY (`cod_endereco`);
+  ADD PRIMARY KEY (`cpendereco`);
 
 --
 -- Indexes for table `mecanico`
 --
 ALTER TABLE `mecanico`
-  ADD PRIMARY KEY (`cod_mecanico`);
+  ADD PRIMARY KEY (`cpmecanico`),
+  ADD KEY `mecanicoFK1` (`ceendereco`);
 
 --
--- Indexes for table `mecanico-servico`
+-- Indexes for table `mecanico_servico`
 --
-ALTER TABLE `mecanico-servico`
-  ADD PRIMARY KEY (`cod_mecanico-servico`),
-  ADD KEY `cod_os` (`cod_os`),
-  ADD KEY `cod_mecanico` (`cod_mecanico`),
-  ADD KEY `cod_servico` (`cod_servico`);
+ALTER TABLE `mecanico_servico`
+  ADD PRIMARY KEY (`cpmecanico_servico`),
+  ADD KEY `mecanico_servicoFK1` (`ceos`),
+  ADD KEY `mecanico_servicoFK2` (`cemecanico`),
+  ADD KEY `mecanico_servicoFK3` (`ceservico`);
 
 --
--- Indexes for table `o.s`
+-- Indexes for table `os`
 --
-ALTER TABLE `o.s`
-  ADD PRIMARY KEY (`cod_os`),
-  ADD KEY `cod_cliente` (`cod_cliente`);
+ALTER TABLE `os`
+  ADD PRIMARY KEY (`cpos`),
+  ADD KEY `osFK1` (`cecliente`);
 
 --
 -- Indexes for table `produto`
 --
 ALTER TABLE `produto`
-  ADD PRIMARY KEY (`cod_produto`);
+  ADD PRIMARY KEY (`cpproduto`);
 
 --
--- Indexes for table `produto-os`
+-- Indexes for table `produto_os`
 --
-ALTER TABLE `produto-os`
-  ADD PRIMARY KEY (`cod_produto-os`),
-  ADD KEY `cod_produto` (`cod_produto`),
-  ADD KEY `cod_os` (`cod_os`);
+ALTER TABLE `produto_os`
+  ADD PRIMARY KEY (`cpproduto_os`),
+  ADD KEY `produto_osFK1` (`ceproduto`),
+  ADD KEY `produto_osFK2` (`ceos`);
 
 --
 -- Indexes for table `servico`
 --
 ALTER TABLE `servico`
-  ADD PRIMARY KEY (`cod_servico`);
+  ADD PRIMARY KEY (`cpservico`);
 
 --
 -- Indexes for table `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`cod_usuario`);
+  ADD PRIMARY KEY (`cpusuario`),
+  ADD KEY `usuarioFK1` (`ceendereco`);
 
 --
 -- Indexes for table `veiculo`
 --
 ALTER TABLE `veiculo`
-  ADD PRIMARY KEY (`cod_veiculo`);
+  ADD PRIMARY KEY (`cpveiculo`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -301,57 +302,57 @@ ALTER TABLE `veiculo`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `cod_cliente` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpcliente` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `cliente-veiculo`
+-- AUTO_INCREMENT for table `cliente_veiculo`
 --
-ALTER TABLE `cliente-veiculo`
-  MODIFY `cod_cliente-veiculo` int(4) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `cliente_veiculo`
+  MODIFY `cpcliente_veiculo` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `endereco`
 --
 ALTER TABLE `endereco`
-  MODIFY `cod_endereco` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpendereco` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `mecanico`
 --
 ALTER TABLE `mecanico`
-  MODIFY `cod_mecanico` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpmecanico` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `mecanico-servico`
+-- AUTO_INCREMENT for table `mecanico_servico`
 --
-ALTER TABLE `mecanico-servico`
-  MODIFY `cod_mecanico-servico` int(4) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `mecanico_servico`
+  MODIFY `cpmecanico_servico` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `o.s`
+-- AUTO_INCREMENT for table `os`
 --
-ALTER TABLE `o.s`
-  MODIFY `cod_os` int(4) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `os`
+  MODIFY `cpos` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `cod_produto` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpproduto` int(4) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `produto-os`
+-- AUTO_INCREMENT for table `produto_os`
 --
-ALTER TABLE `produto-os`
-  MODIFY `cod_produto-os` int(4) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `produto_os`
+  MODIFY `cpproduto_os` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `servico`
 --
 ALTER TABLE `servico`
-  MODIFY `cod_servico` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpservico` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `cod_usuario` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpusuario` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `veiculo`
 --
 ALTER TABLE `veiculo`
-  MODIFY `cod_veiculo` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `cpveiculo` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
@@ -360,35 +361,47 @@ ALTER TABLE `veiculo`
 -- Limitadores para a tabela `cliente`
 --
 ALTER TABLE `cliente`
-  ADD CONSTRAINT `cliente_ibfk_1` FOREIGN KEY (`cod_endereco`) REFERENCES `endereco` (`cod_endereco`);
+  ADD CONSTRAINT `clienteFK1` FOREIGN KEY (`ceendereco`) REFERENCES `endereco` (`cpendereco`);
 
 --
--- Limitadores para a tabela `cliente-veiculo`
+-- Limitadores para a tabela `cliente_veiculo`
 --
-ALTER TABLE `cliente-veiculo`
-  ADD CONSTRAINT `cliente-veiculo_ibfk_1` FOREIGN KEY (`cod_cliente`) REFERENCES `cliente` (`cod_cliente`),
-  ADD CONSTRAINT `cliente-veiculo_ibfk_2` FOREIGN KEY (`cod_veiculo`) REFERENCES `veiculo` (`cod_veiculo`);
+ALTER TABLE `cliente_veiculo`
+  ADD CONSTRAINT `cliente-veiculoFK1` FOREIGN KEY (`cecliente`) REFERENCES `cliente` (`cpcliente`),
+  ADD CONSTRAINT `cliente-veiculoFK2` FOREIGN KEY (`ceveiculo`) REFERENCES `veiculo` (`cpveiculo`);
 
 --
--- Limitadores para a tabela `mecanico-servico`
+-- Limitadores para a tabela `mecanico`
 --
-ALTER TABLE `mecanico-servico`
-  ADD CONSTRAINT `mecanico-servico_ibfk_1` FOREIGN KEY (`cod_os`) REFERENCES `o.s` (`cod_os`),
-  ADD CONSTRAINT `mecanico-servico_ibfk_2` FOREIGN KEY (`cod_mecanico`) REFERENCES `mecanico` (`cod_mecanico`),
-  ADD CONSTRAINT `mecanico-servico_ibfk_3` FOREIGN KEY (`cod_servico`) REFERENCES `servico` (`cod_servico`);
+ALTER TABLE `mecanico`
+  ADD CONSTRAINT `mecanicoFK1` FOREIGN KEY (`ceendereco`) REFERENCES `endereco` (`cpendereco`);
 
 --
--- Limitadores para a tabela `o.s`
+-- Limitadores para a tabela `mecanico_servico`
 --
-ALTER TABLE `o.s`
-  ADD CONSTRAINT `o.s_ibfk_1` FOREIGN KEY (`cod_cliente`) REFERENCES `cliente-veiculo` (`cod_cliente-veiculo`);
+ALTER TABLE `mecanico_servico`
+  ADD CONSTRAINT `mecanico_servicoFK1` FOREIGN KEY (`ceos`) REFERENCES `os` (`cpos`),
+  ADD CONSTRAINT `mecanico_servicoFK2` FOREIGN KEY (`cemecanico`) REFERENCES `mecanico` (`cpmecanico`),
+  ADD CONSTRAINT `mecanico_servicoFK3` FOREIGN KEY (`ceservico`) REFERENCES `servico` (`cpservico`);
 
 --
--- Limitadores para a tabela `produto-os`
+-- Limitadores para a tabela `os`
 --
-ALTER TABLE `produto-os`
-  ADD CONSTRAINT `produto-os_ibfk_1` FOREIGN KEY (`cod_produto`) REFERENCES `produto` (`cod_produto`),
-  ADD CONSTRAINT `produto-os_ibfk_2` FOREIGN KEY (`cod_os`) REFERENCES `o.s` (`cod_os`);
+ALTER TABLE `os`
+  ADD CONSTRAINT `osFK1` FOREIGN KEY (`cecliente`) REFERENCES `cliente_veiculo` (`cpcliente_veiculo`);
+
+--
+-- Limitadores para a tabela `produto_os`
+--
+ALTER TABLE `produto_os`
+  ADD CONSTRAINT `produto_osFK1` FOREIGN KEY (`ceproduto`) REFERENCES `produto` (`cpproduto`),
+  ADD CONSTRAINT `produto_osFK2` FOREIGN KEY (`ceos`) REFERENCES `os` (`cpos`);
+
+--
+-- Limitadores para a tabela `usuario`
+--
+ALTER TABLE `usuario`
+  ADD CONSTRAINT `usuarioFK1` FOREIGN KEY (`ceendereco`) REFERENCES `endereco` (`cpendereco`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
