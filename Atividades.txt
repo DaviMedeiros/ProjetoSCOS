@@ -1,0 +1,14 @@
+Atividades:
+
+
+Clientes/Veiculos = Davi
+
+Usuario/Login/Menu = João
+
+Mecanicos = Nathan
+
+Produtos/Serviços = Guilherme
+
+
+
+OS/Relatorios = Todos 
