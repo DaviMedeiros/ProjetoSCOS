@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 22-Mar-2017 às 14:25
+-- Generation Time: 23-Mar-2017 às 01:28
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -189,9 +189,10 @@ CREATE TABLE `usuario` (
   `txcpf` varchar(14) NOT NULL,
   `txrg` varchar(20) NOT NULL,
   `txuf_rg` varchar(3) DEFAULT NULL,
-  `txctps` varchar(50) DEFAULT NULL,
+  `txctps` varchar(50) NOT NULL,
   `txemail` varchar(150) DEFAULT NULL,
   `dtnascimento` date NOT NULL,
+  `statususu` int(4) DEFAULT NULL,
   `tipo` int(4) NOT NULL,
   `dtcadusuario` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

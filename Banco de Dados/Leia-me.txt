@@ -1,3 +1,8 @@
 Banco de dados em extensão .sql
 
 Criar a base de dados com o nome bd_projetoscos e importar o sql
+
+-------------------------------------------------------------------
+Atualizado	22/03
+
+Dropar o banco e upar denovo
