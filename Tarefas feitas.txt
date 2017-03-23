@@ -23,3 +23,7 @@ E ja deixo pra vocês completarem com suas tarefas feitas.
 	Banco de dados alterado e corrigido.
 
 ------------------------------------------------------------------------------------------------
+22/03/17 - 21:30 - João Manoel
+	Banco de dados alterado, documento de requisitos corrigido e modelo relacional.
+
+------------------------------------------------------------------------------------------------
