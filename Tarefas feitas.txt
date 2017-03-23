@@ -1,0 +1,25 @@
+Vamo usar esse arquivo para escrever as tarefas feitas.
+Vamos colocar a data, hora, quem fez e descrição do que foi feito, por exemplo:
+
+------------------------------------------------------------------------------------------------
+16/03/17 - 08:30 - João Manoel
+	Tabela de usuario corrigida no mr e adicionado as imagens ao documento de requisitos.
+
+------------------------------------------------------------------------------------------------
+
+E ja deixo pra vocês completarem com suas tarefas feitas.
+
+
+------------------------------------------------------------------------------------------------
+16/03/17 - 08:30 - João Manoel
+	Tabela de usuario corrigida no mr e adicionado as imagens ao documento de requisitos.
+
+------------------------------------------------------------------------------------------------
+17/03/17 - 07:50 - Davi Medeiros
+	Adicionado as telas ao projeto.
+
+------------------------------------------------------------------------------------------------
+22/03/17 - 10:26 - João Manoel
+	Banco de dados alterado e corrigido.
+
+------------------------------------------------------------------------------------------------
