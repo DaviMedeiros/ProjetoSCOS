@@ -25,6 +25,7 @@ public class Cliente {
     private String txobs;
     private int statuscli;
     private Date dtcadcliente;
+    private String nomexx;
 
     
     public int getCpcliente() {
