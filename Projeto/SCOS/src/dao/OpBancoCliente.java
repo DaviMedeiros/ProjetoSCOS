@@ -10,5 +10,5 @@ package dao;
  * @author Usuario
  */
 public class OpBancoCliente {
-    
+    okokko
 }
